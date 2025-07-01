@@ -1,0 +1,41 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+:root{
+    --bg-word:blue;
+}
+.container{
+    height:1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1:after{
+    content:"";
+    animation:6s swap infinite;
+    padding:10px;
+    color:white;
+    border-radius:4px;
+    margin-left: 4px;
+    background: var(--bg-word);
+}
+
+@keyframes swap{
+    0%{
+        content: " Successful";
+    }
+    25%{
+        content:" A Winner";
+    }
+    50%{
+        content:" A leader";
+    }
+    75%{
+        content:" Always Optimistic"
+    }
+    100%{
+        content:" Successful" ;
+    }
+}
